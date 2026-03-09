@@ -44,8 +44,6 @@
 }
 </script>
 
-<!-- EmailJS SDK -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <style>
 /* ===== RESET & BASE ===== */
@@ -720,11 +718,7 @@ ul{list-style:none}
 
 <script>
 /* ===== CONFIG ===== */
-// TODO: Replace these with your actual keys
-const EMAILJS_PUBLIC_KEY = 'YOUR_EMAILJS_PUBLIC_KEY';
-const EMAILJS_SERVICE_ID = 'YOUR_EMAILJS_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'YOUR_EMAILJS_TEMPLATE_ID';
-const GOOGLE_SHEETS_URL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL';
+const GOOGLE_SHEETS_URL = 'https://script.google.com/macros/s/AKfycbwTsklmwKelc35PI33L_TgV7SQRc6NgPWDdVb3iJaRN1mEd_6YyUAjdilDw34qDQ1gP/exec';
 
 /* ===== NAV ===== */
 function toggleNav(){document.getElementById('navLinks').classList.toggle('open')}
@@ -814,50 +808,21 @@ function submitForm(){
   currentStep=5;
   updateForm();
 
-  // EmailJS
-  if(EMAILJS_PUBLIC_KEY!=='YOUR_EMAILJS_PUBLIC_KEY'){
-    emailjs.init(EMAILJS_PUBLIC_KEY);
-    emailjs.send(EMAILJS_SERVICE_ID,EMAILJS_TEMPLATE_ID,{
-      to_email:'jujulaville8@gmail.com',
-      subject:'New Plumbing Lead — Durham Region',
+  // Send to Google Apps Script (logs to sheet + sends email)
+  fetch(GOOGLE_SHEETS_URL,{
+    method:'POST',
+    mode:'no-cors',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({
       timestamp:timestamp,
+      name:formData.fullName,
+      phone:formData.phone,
+      postalCode:formData.postalCode,
       issue:formData.issue,
       urgency:formData.urgency,
-      postal_code:formData.postalCode,
-      full_name:formData.fullName,
-      phone:formData.phone,
-      call_time:formData.callTime,
-      message:`
-NEW PLUMBING LEAD — DURHAM REGION
-──────────────────────────────
-Timestamp: ${timestamp}
-Name: ${formData.fullName}
-Phone: ${formData.phone}
-Postal Code: ${formData.postalCode}
-Issue: ${formData.issue}
-Urgency: ${formData.urgency}
-Best Time to Call: ${formData.callTime}
-──────────────────────────────`
-    }).catch(e=>console.error('EmailJS error:',e));
-  }
-
-  // Google Sheets
-  if(GOOGLE_SHEETS_URL!=='YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL'){
-    fetch(GOOGLE_SHEETS_URL,{
-      method:'POST',
-      mode:'no-cors',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({
-        timestamp:timestamp,
-        name:formData.fullName,
-        phone:formData.phone,
-        postalCode:formData.postalCode,
-        issue:formData.issue,
-        urgency:formData.urgency,
-        callTime:formData.callTime
-      })
-    }).catch(e=>console.error('Sheets error:',e));
-  }
+      callTime:formData.callTime
+    })
+  }).catch(e=>console.error('Lead submission error:',e));
 }
 
 /* ===== FAQ TOGGLE ===== */
