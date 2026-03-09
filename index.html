@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emergency Plumber Durham Region — 24/7 Local Service, Free Quotes</title>
+<meta name="description" content="Need an emergency plumber in Durham Region? 24/7 licensed plumbers in Whitby, Oshawa, Ajax, Pickering & Brooklin. Fast response, free quotes. Call now!">
+<meta name="keywords" content="emergency plumber Durham Region, 24/7 plumber Whitby, plumber Oshawa, emergency plumbing Ajax, Pickering plumber, burst pipe repair Durham">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://durhamemergencyplumber.ca/">
+<meta property="og:title" content="Emergency Plumber Durham Region — 24/7 Local Service">
+<meta property="og:description" content="Fast, licensed emergency plumbers serving all of Durham Region. Free quotes, no call-out fees.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://durhamemergencyplumber.ca/">
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Emergency Plumber Durham Region",
+  "description": "24/7 emergency plumbing services in Durham Region including Whitby, Oshawa, Ajax, Pickering, and Brooklin.",
+  "url": "https://durhamemergencyplumber.ca",
+  "telephone": "+1-905-555-0199",
+  "areaServed": [
+    {"@type": "City", "name": "Whitby"},
+    {"@type": "City", "name": "Oshawa"},
+    {"@type": "City", "name": "Ajax"},
+    {"@type": "City", "name": "Pickering"},
+    {"@type": "City", "name": "Brooklin"}
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "priceRange": "$$",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "312"
+  }
+}
+</script>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<style>
+/* ===== RESET & BASE ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1a2744;
+  --navy-light:#243352;
+  --navy-dark:#0f1a2e;
+  --white:#ffffff;
+  --off-white:#f7f9fc;
+  --orange:#e8651a;
+  --orange-hover:#d45a15;
+  --orange-light:#fff3ec;
+  --gray:#6b7a8d;
+  --gray-light:#e2e8f0;
+  --success:#22c55e;
+  --shadow:0 4px 24px rgba(26,39,68,0.10);
+  --shadow-lg:0 8px 40px rgba(26,39,68,0.15);
+  --radius:12px;
+  --radius-sm:8px;
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:var(--navy);line-height:1.6;background:var(--white);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+
+/* ===== UTILITIES ===== */
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+.section{padding:60px 0}
+.section-title{font-size:1.75rem;font-weight:800;text-align:center;margin-bottom:12px}
+.section-subtitle{text-align:center;color:var(--gray);max-width:560px;margin:0 auto 40px;font-size:1rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:16px 32px;border-radius:var(--radius-sm);font-size:1.05rem;font-weight:700;border:none;cursor:pointer;transition:all .2s}
+.btn-orange{background:var(--orange);color:var(--white)}
+.btn-orange:hover{background:var(--orange-hover);transform:translateY(-1px);box-shadow:0 4px 16px rgba(232,101,26,0.35)}
+.btn-white{background:var(--white);color:var(--navy)}
+.btn-white:hover{background:var(--off-white);transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--white);border:2px solid var(--white)}
+.btn-outline:hover{background:var(--white);color:var(--navy)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+
+/* ===== NAV ===== */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--navy);padding:0 20px;transition:box-shadow .3s}
+.nav.scrolled{box-shadow:0 2px 20px rgba(0,0,0,.2)}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{color:var(--white);font-weight:800;font-size:1.1rem;letter-spacing:-.5px}
+.nav-logo span{color:var(--orange)}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{color:rgba(255,255,255,.8);font-size:.9rem;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--white)}
+.nav-cta{background:var(--orange);color:var(--white)!important;padding:8px 20px;border-radius:var(--radius-sm);font-weight:700!important}
+.nav-cta:hover{background:var(--orange-hover)}
+.nav-toggle{display:none;background:none;border:none;color:var(--white);font-size:1.5rem;cursor:pointer}
+
+/* Mobile Nav */
+@media(max-width:768px){
+  .nav-links{position:fixed;top:64px;left:0;right:0;bottom:0;background:var(--navy-dark);flex-direction:column;padding:32px 20px;gap:16px;transform:translateX(100%);transition:transform .3s}
+  .nav-links.open{transform:translateX(0)}
+  .nav-links a{font-size:1.1rem;padding:8px 0}
+  .nav-toggle{display:block}
+}
+
+/* ===== PAGE SECTIONS ===== */
+.page{display:none}
+.page.active{display:block}
+
+/* ===== HERO ===== */
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-light) 100%);padding:120px 0 80px;color:var(--white);text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(232,101,26,0.08) 0%,transparent 70%);border-radius:50%}
+.hero h1{font-size:clamp(1.8rem,5vw,3rem);font-weight:900;line-height:1.15;margin-bottom:16px;max-width:700px;margin-left:auto;margin-right:auto}
+.hero h1 span{color:var(--orange)}
+.hero p{font-size:clamp(1rem,2.5vw,1.2rem);opacity:.85;max-width:520px;margin:0 auto 32px}
+.hero-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* ===== TRUST BADGES ===== */
+.trust{background:var(--white);padding:40px 0;border-bottom:1px solid var(--gray-light)}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
+.trust-item{display:flex;flex-direction:column;align-items:center;gap:8px}
+.trust-icon{width:48px;height:48px;background:var(--orange-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem}
+.trust-item h3{font-size:.95rem;font-weight:700}
+.trust-item p{font-size:.8rem;color:var(--gray)}
+@media(max-width:480px){.trust-grid{grid-template-columns:1fr;gap:16px}.trust-item{flex-direction:row;text-align:left}.trust-item div{text-align:left}}
+
+/* ===== FORM ===== */
+.form-section{background:var(--off-white);padding:60px 0}
+.form-card{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow-lg);max-width:540px;margin:0 auto;padding:40px 32px;position:relative;overflow:hidden}
+.form-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--orange),var(--navy))}
+.form-progress{display:flex;justify-content:center;gap:8px;margin-bottom:28px}
+.form-progress .dot{width:10px;height:10px;border-radius:50%;background:var(--gray-light);transition:all .3s}
+.form-progress .dot.active{background:var(--orange);transform:scale(1.2)}
+.form-progress .dot.done{background:var(--success)}
+.form-step{display:none}
+.form-step.active{display:block}
+.form-step h3{font-size:1.25rem;font-weight:800;margin-bottom:6px;text-align:center}
+.form-step p.step-sub{text-align:center;color:var(--gray);font-size:.9rem;margin-bottom:24px}
+.form-options{display:grid;gap:10px}
+.form-option{padding:14px 16px;border:2px solid var(--gray-light);border-radius:var(--radius-sm);cursor:pointer;font-weight:600;font-size:.95rem;transition:all .2s;text-align:center}
+.form-option:hover{border-color:var(--orange);background:var(--orange-light)}
+.form-option.selected{border-color:var(--orange);background:var(--orange-light);color:var(--orange)}
+.form-input{width:100%;padding:14px 16px;border:2px solid var(--gray-light);border-radius:var(--radius-sm);font-size:1rem;font-family:inherit;outline:none;transition:border-color .2s}
+.form-input:focus{border-color:var(--orange)}
+.form-input::placeholder{color:#aab4c2}
+.form-row{display:grid;gap:12px;margin-bottom:12px}
+.form-btn-row{display:flex;gap:12px;margin-top:20px}
+.form-btn-row .btn{flex:1}
+.form-back{background:var(--gray-light);color:var(--navy)}
+.form-back:hover{background:#d1d9e6}
+.form-error{color:#dc2626;font-size:.85rem;margin-top:6px;display:none}
+
+/* Thank you */
+.thank-you{text-align:center;padding:20px 0}
+.thank-you .check{width:64px;height:64px;background:var(--success);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:2rem;color:var(--white)}
+.thank-you h3{font-size:1.4rem;margin-bottom:8px}
+.thank-you p{color:var(--gray)}
+
+/* ===== HOW IT WORKS ===== */
+.how{background:var(--white)}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.how-step{text-align:center;padding:24px}
+.how-num{width:48px;height:48px;background:var(--navy);color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.2rem;margin:0 auto 16px}
+.how-step h3{font-size:1.05rem;font-weight:700;margin-bottom:8px}
+.how-step p{color:var(--gray);font-size:.9rem}
+@media(max-width:640px){.how-grid{grid-template-columns:1fr;gap:16px}}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials{background:var(--off-white)}
+.test-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.test-card{background:var(--white);padding:24px;border-radius:var(--radius);box-shadow:var(--shadow)}
+.test-stars{color:var(--orange);font-size:1.1rem;margin-bottom:10px}
+.test-text{font-size:.95rem;line-height:1.65;margin-bottom:14px;color:#334155}
+.test-author{font-weight:700;font-size:.9rem}
+.test-location{color:var(--gray);font-size:.8rem}
+
+/* ===== FAQ ===== */
+.faq{background:var(--white)}
+.faq-list{max-width:680px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--gray-light)}
+.faq-q{padding:18px 0;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:1rem}
+.faq-q::after{content:'+';font-size:1.3rem;font-weight:300;color:var(--orange);transition:transform .3s}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s;color:var(--gray);font-size:.95rem;line-height:1.7}
+.faq-item.open .faq-a{max-height:400px;padding-bottom:18px}
+
+/* ===== INLINE CTA ===== */
+.inline-cta{background:linear-gradient(135deg,var(--navy),var(--navy-light));color:var(--white);text-align:center;padding:60px 20px}
+.inline-cta h2{font-size:1.6rem;font-weight:800;margin-bottom:10px}
+.inline-cta p{opacity:.8;margin-bottom:24px}
+
+/* ===== FOOTER ===== */
+.footer{background:var(--navy-dark);color:rgba(255,255,255,.7);padding:48px 0 24px;font-size:.85rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px;margin-bottom:32px}
+.footer h4{color:var(--white);font-size:1rem;margin-bottom:12px}
+.footer p{margin-bottom:8px}
+.footer a{color:rgba(255,255,255,.7);transition:color .2s}
+.footer a:hover{color:var(--orange)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;text-align:center}
+@media(max-width:640px){.footer-grid{grid-template-columns:1fr;gap:24px}}
+
+/* ===== INNER PAGES ===== */
+.page-header{background:linear-gradient(135deg,var(--navy),var(--navy-light));color:var(--white);padding:100px 0 50px;text-align:center}
+.page-header h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;margin-bottom:8px}
+.page-header p{opacity:.8;max-width:500px;margin:0 auto}
+.page-content{padding:48px 0}
+.page-content .content-wrap{max-width:720px;margin:0 auto}
+.page-content h2{font-size:1.4rem;font-weight:800;margin:32px 0 12px;color:var(--navy)}
+.page-content h3{font-size:1.1rem;font-weight:700;margin:24px 0 8px}
+.page-content p,.page-content li{color:#475569;line-height:1.8;margin-bottom:12px}
+.page-content ul{padding-left:20px}
+.page-content ul li{list-style:disc;margin-bottom:8px}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.fade-up{opacity:0;transform:translateY(20px)}.fade-up.visible{animation:fadeUp .5s ease forwards}
+
+/* ===== PHONE STICKY BAR ===== */
+.sticky-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:999;background:var(--orange);padding:12px 20px;text-align:center}
+.sticky-bar a{color:var(--white);font-weight:800;font-size:1.05rem}
+@media(max-width:768px){.sticky-bar{display:block}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+<div class="nav-inner">
+  <a href="#" class="nav-logo" onclick="showPage('home')">Durham<span>Plumber</span></a>
+  <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">&#9776;</button>
+  <div class="nav-links" id="navLinks">
+    <a href="#" onclick="showPage('home');closeNav()">Home</a>
+    <a href="#" onclick="showPage('about');closeNav()">About</a>
+    <a href="#" onclick="showPage('how-it-works');closeNav()">How It Works</a>
+    <a href="#" onclick="showPage('faq-page');closeNav()">FAQ</a>
+    <a href="#" onclick="scrollToForm();closeNav()" class="nav-cta">Get Free Quote</a>
+  </div>
+</div>
+</nav>
+
+<!-- STICKY MOBILE BAR -->
+<div class="sticky-bar">
+  <a href="#" onclick="scrollToForm()">Get Your Free Quote Now &rarr;</a>
+</div>
+
+<!-- ============================================================ -->
+<!-- HOME PAGE -->
+<!-- ============================================================ -->
+<div class="page active" id="page-home">
+
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+  <h1>Emergency Plumber in <span>Durham Region</span> — Fast, Local &amp; Available 24/7</h1>
+  <p>Burst pipe? Blocked drain? No hot water? Get connected with a licensed, vetted plumber near you in minutes — not hours.</p>
+  <div class="hero-buttons">
+    <button class="btn btn-orange" onclick="scrollToForm()">Get a Free Quote Now</button>
+    <a href="tel:+19055550199" class="btn btn-outline">Call 905-555-0199</a>
+  </div>
+</div>
+</section>
+
+<!-- TRUST BADGES -->
+<section class="trust">
+<div class="container">
+  <div class="trust-grid">
+    <div class="trust-item">
+      <div class="trust-icon" role="img" aria-label="24/7 Available">&#128337;</div>
+      <div><h3>24/7 Available</h3><p>Day or night, we answer</p></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon" role="img" aria-label="Licensed & Insured">&#9989;</div>
+      <div><h3>Licensed &amp; Insured</h3><p>Fully vetted professionals</p></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon" role="img" aria-label="Free Quotes">&#128176;</div>
+      <div><h3>Free Quotes</h3><p>No call-out fees, ever</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- LEAD CAPTURE FORM -->
+<section class="form-section" id="leadForm">
+<div class="container">
+  <h2 class="section-title">Get Your Free Plumbing Quote</h2>
+  <p class="section-subtitle">Tell us what's going on — we'll connect you with the right local plumber fast.</p>
+  <div class="form-card">
+    <div class="form-progress">
+      <span class="dot active" data-dot="0"></span>
+      <span class="dot" data-dot="1"></span>
+      <span class="dot" data-dot="2"></span>
+      <span class="dot" data-dot="3"></span>
+      <span class="dot" data-dot="4"></span>
+    </div>
+
+    <!-- Step 1: Issue -->
+    <div class="form-step active" data-step="0">
+      <h3>What's your plumbing issue?</h3>
+      <p class="step-sub">Select the option that best describes your problem</p>
+      <div class="form-options">
+        <div class="form-option" onclick="selectOption(this,'issue')">Burst Pipe</div>
+        <div class="form-option" onclick="selectOption(this,'issue')">Blocked Drain</div>
+        <div class="form-option" onclick="selectOption(this,'issue')">No Hot Water</div>
+        <div class="form-option" onclick="selectOption(this,'issue')">Leaking Tap</div>
+        <div class="form-option" onclick="selectOption(this,'issue')">Other</div>
+      </div>
+      <div class="form-error" id="err-0">Please select your plumbing issue</div>
+    </div>
+
+    <!-- Step 2: Urgency -->
+    <div class="form-step" data-step="1">
+      <h3>How urgent is it?</h3>
+      <p class="step-sub">This helps us prioritize your request</p>
+      <div class="form-options">
+        <div class="form-option" onclick="selectOption(this,'urgency')">Emergency — Right Now</div>
+        <div class="form-option" onclick="selectOption(this,'urgency')">Today</div>
+        <div class="form-option" onclick="selectOption(this,'urgency')">Within a Week</div>
+        <div class="form-option" onclick="selectOption(this,'urgency')">Just Getting Quotes</div>
+      </div>
+      <div class="form-error" id="err-1">Please select an urgency level</div>
+      <div class="form-btn-row"><button class="btn form-back" onclick="prevStep()">Back</button></div>
+    </div>
+
+    <!-- Step 3: Postal Code -->
+    <div class="form-step" data-step="2">
+      <h3>What's your postal code?</h3>
+      <p class="step-sub">So we can find the closest available plumber</p>
+      <div class="form-row">
+        <input type="text" class="form-input" id="postalCode" placeholder="e.g. L1N 3T7" maxlength="7" autocomplete="postal-code">
+      </div>
+      <div class="form-error" id="err-2">Please enter a valid postal code</div>
+      <div class="form-btn-row">
+        <button class="btn form-back" onclick="prevStep()">Back</button>
+        <button class="btn btn-orange" onclick="nextStep()">Continue</button>
+      </div>
+    </div>
+
+    <!-- Step 4: Name & Phone -->
+    <div class="form-step" data-step="3">
+      <h3>Your contact details</h3>
+      <p class="step-sub">We'll only use this to connect you with a plumber</p>
+      <div class="form-row">
+        <input type="text" class="form-input" id="fullName" placeholder="Full Name" autocomplete="name">
+        <input type="tel" class="form-input" id="phone" placeholder="Phone Number" autocomplete="tel">
+      </div>
+      <div class="form-error" id="err-3">Please enter your name and phone number</div>
+      <div class="form-btn-row">
+        <button class="btn form-back" onclick="prevStep()">Back</button>
+        <button class="btn btn-orange" onclick="nextStep()">Continue</button>
+      </div>
+    </div>
+
+    <!-- Step 5: Best Time -->
+    <div class="form-step" data-step="4">
+      <h3>Best time to call you?</h3>
+      <p class="step-sub">We'll do our best to reach you at your preferred time</p>
+      <div class="form-options">
+        <div class="form-option" onclick="selectOption(this,'callTime')">Right Now</div>
+        <div class="form-option" onclick="selectOption(this,'callTime')">Morning (8am–12pm)</div>
+        <div class="form-option" onclick="selectOption(this,'callTime')">Afternoon (12pm–5pm)</div>
+        <div class="form-option" onclick="selectOption(this,'callTime')">Evening (5pm–9pm)</div>
+      </div>
+      <div class="form-error" id="err-4">Please select a preferred call time</div>
+      <div class="form-btn-row">
+        <button class="btn form-back" onclick="prevStep()">Back</button>
+        <button class="btn btn-orange" id="submitBtn" onclick="submitForm()">Get My Free Quote</button>
+      </div>
+    </div>
+
+    <!-- Thank You -->
+    <div class="form-step" data-step="5">
+      <div class="thank-you">
+        <div class="check">&#10003;</div>
+        <h3>We're Connecting You With a Local Plumber Now</h3>
+        <p>Expect a call within <strong>15 minutes</strong>. If it's after hours, we'll reach out first thing in the morning. Thank you for choosing Durham's most trusted plumbing service.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how section">
+<div class="container">
+  <h2 class="section-title">How It Works</h2>
+  <p class="section-subtitle">Getting help with your plumbing emergency is simple</p>
+  <div class="how-grid">
+    <div class="how-step fade-up">
+      <div class="how-num">1</div>
+      <h3>Tell Us the Problem</h3>
+      <p>Fill out our quick form — it takes less than 60 seconds. Describe your issue, location, and urgency.</p>
+    </div>
+    <div class="how-step fade-up">
+      <div class="how-num">2</div>
+      <h3>We Match You</h3>
+      <p>We instantly connect you with a licensed, vetted plumber in your area of Durham Region.</p>
+    </div>
+    <div class="how-step fade-up">
+      <div class="how-num">3</div>
+      <h3>Problem Solved</h3>
+      <p>Your plumber arrives fast, gives you a fair quote, and gets the job done right — guaranteed.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials section">
+<div class="container">
+  <h2 class="section-title">What Durham Region Homeowners Say</h2>
+  <p class="section-subtitle">Hundreds of families trust us when plumbing emergencies strike</p>
+  <div class="test-grid">
+    <div class="test-card fade-up">
+      <div class="test-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="test-text">"Pipe burst at 2am and they had someone at my door within the hour. Absolute lifesavers. The plumber was friendly, professional, and cleaned up everything before leaving."</p>
+      <p class="test-author">Sarah M.</p>
+      <p class="test-location">Whitby</p>
+    </div>
+    <div class="test-card fade-up">
+      <div class="test-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="test-text">"Our basement was flooding on a Sunday evening. Called these guys and a plumber showed up in 40 minutes. Fixed the issue, no upselling, fair price. Can't recommend enough."</p>
+      <p class="test-author">Mike D.</p>
+      <p class="test-location">Oshawa</p>
+    </div>
+    <div class="test-card fade-up">
+      <div class="test-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="test-text">"Had no hot water with a newborn in the house. They treated it as a real emergency and had it fixed the same day. The plumber even explained what caused it so I could prevent it in the future."</p>
+      <p class="test-author">Jessica R.</p>
+      <p class="test-location">Ajax</p>
+    </div>
+    <div class="test-card fade-up">
+      <div class="test-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="test-text">"Blocked drain was backing up into our kitchen. The plumber arrived quickly, sorted it in under an hour, and charged exactly what he quoted. Honest and reliable — hard to find these days."</p>
+      <p class="test-author">David L.</p>
+      <p class="test-location">Pickering</p>
+    </div>
+    <div class="test-card fade-up">
+      <div class="test-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="test-text">"I was getting quotes from everyone and these guys connected me with the most reasonable plumber. No pressure, just helpful service. Got the leaking tap fixed for a great price."</p>
+      <p class="test-author">Karen T.</p>
+      <p class="test-location">Brooklin</p>
+    </div>
+    <div class="test-card fade-up">
+      <div class="test-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="test-text">"Third plumbing company I tried in Durham and by far the best experience. The plumber showed up on time, was super respectful of our home, and fixed a tricky pipe issue that two others couldn't."</p>
+      <p class="test-author">Tom W.</p>
+      <p class="test-location">Whitby</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="faq section">
+<div class="container">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <p class="section-subtitle">Everything you need to know about our emergency plumbing service</p>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How much does an emergency plumber cost in Durham Region?</div>
+      <div class="faq-a">Emergency plumbing rates in Durham Region typically range from $150–$350 for a call-out, depending on the time of day and complexity. We connect you with plumbers who offer free quotes with no hidden call-out fees, so you'll know the cost before any work begins.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What counts as a plumbing emergency?</div>
+      <div class="faq-a">A plumbing emergency is any issue that could cause immediate damage to your home or poses a health risk. This includes burst pipes, major leaks, sewage backups, no water supply, and gas leaks. If in doubt, fill out our form — we'll help you determine the urgency.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How fast can a plumber get to my home?</div>
+      <div class="faq-a">For emergencies in Durham Region, our network plumbers typically arrive within 30–60 minutes. Response times may vary based on your exact location and current demand, but we prioritize getting someone to you as fast as possible.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Which areas in Durham Region do you serve?</div>
+      <div class="faq-a">We serve all of Durham Region including Whitby, Oshawa, Ajax, Pickering, Brooklin, Courtice, Bowmanville, Clarington, Uxbridge, and Scugog. If you're in Durham Region, we've got you covered.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Are your plumbers licensed and insured?</div>
+      <div class="faq-a">Yes. Every plumber in our network is fully licensed, insured, and background-checked. We only work with experienced professionals who meet our strict vetting standards.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Is there a fee for getting a quote?</div>
+      <div class="faq-a">No, quotes are always free. Fill out our form and we'll have a plumber contact you with a no-obligation quote. You're never pressured to proceed.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- INLINE CTA -->
+<section class="inline-cta">
+<div class="container">
+  <h2>Don't Wait Until It Gets Worse</h2>
+  <p>Plumbing problems escalate fast. Get a free quote now and let a local expert handle it.</p>
+  <button class="btn btn-orange" onclick="scrollToForm()">Get a Free Quote &rarr;</button>
+</div>
+</section>
+
+</div>
+
+<!-- ============================================================ -->
+<!-- ABOUT PAGE -->
+<!-- ============================================================ -->
+<div class="page" id="page-about">
+<div class="page-header">
+  <h1>About Our Service</h1>
+  <p>How we connect Durham Region homeowners with trusted, vetted plumbers</p>
+</div>
+<div class="page-content">
+  <div class="container content-wrap">
+    <h2>Why We Exist</h2>
+    <p>When a pipe bursts at 2am or your basement starts flooding on a holiday weekend, the last thing you want to do is scroll through dozens of listings hoping to find someone reliable. We built this service to eliminate that stress.</p>
+    <p>We're a Durham Region-based referral service that connects homeowners with licensed, insured, and vetted emergency plumbers — fast. No guesswork, no sketchy contractors, no inflated prices.</p>
+
+    <h2>Our Vetting Process</h2>
+    <p>Not just any plumber gets into our network. Every professional we work with goes through a rigorous screening process:</p>
+    <ul>
+      <li><strong>License Verification</strong> — We confirm every plumber holds a valid Ontario plumbing license</li>
+      <li><strong>Insurance Check</strong> — Full liability insurance is mandatory, no exceptions</li>
+      <li><strong>Background Screening</strong> — We run background checks on every technician entering your home</li>
+      <li><strong>Customer Reviews</strong> — We monitor ongoing performance through real customer feedback</li>
+      <li><strong>Fair Pricing Audit</strong> — We regularly benchmark our plumbers' pricing against the market to ensure fairness</li>
+    </ul>
+
+    <h2>Our Service Areas</h2>
+    <p>We proudly serve all communities across Durham Region, including Whitby, Oshawa, Ajax, Pickering, Brooklin, Courtice, Bowmanville, Clarington, Uxbridge, and Scugog.</p>
+
+    <h2>Our Promise</h2>
+    <p>Fast response. Fair prices. Friendly, qualified plumbers who treat your home with respect. That's what we deliver — every single time.</p>
+
+    <div style="text-align:center;margin-top:40px">
+      <button class="btn btn-orange" onclick="showPage('home');setTimeout(scrollToForm,100)">Get Your Free Quote &rarr;</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- HOW IT WORKS PAGE -->
+<!-- ============================================================ -->
+<div class="page" id="page-how-it-works">
+<div class="page-header">
+  <h1>How It Works</h1>
+  <p>From emergency to resolution in three simple steps</p>
+</div>
+<div class="page-content">
+  <div class="container content-wrap">
+    <h2>Step 1: Tell Us What's Going On</h2>
+    <p>Use our quick 60-second form to describe your plumbing issue. Select the type of problem (burst pipe, blocked drain, no hot water, leaking tap, or other), how urgent it is, and your location in Durham Region. No account needed — just the basics.</p>
+
+    <h2>Step 2: We Match You Instantly</h2>
+    <p>As soon as your form is submitted, we review your details and connect you with the best available licensed plumber in your area. We consider proximity, availability, and specialization to make sure you get the right person for the job.</p>
+
+    <h2>Step 3: Your Plumber Arrives &amp; Fixes the Problem</h2>
+    <p>Your matched plumber will call you — typically within 15 minutes — to confirm details, provide a quote, and schedule the visit. For emergencies, expect someone at your door within 30–60 minutes. The plumber handles the job, you approve the price upfront, and you only pay once you're satisfied.</p>
+
+    <h2>What Makes Us Different</h2>
+    <ul>
+      <li>No call-out fees or hidden charges</li>
+      <li>Every plumber is licensed, insured, and background-checked</li>
+      <li>We follow up after every job to ensure you're happy</li>
+      <li>Available 24 hours a day, 7 days a week, 365 days a year</li>
+    </ul>
+
+    <div style="text-align:center;margin-top:40px">
+      <button class="btn btn-orange" onclick="showPage('home');setTimeout(scrollToForm,100)">Get Started — It's Free &rarr;</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- FAQ PAGE -->
+<!-- ============================================================ -->
+<div class="page" id="page-faq-page">
+<div class="page-header">
+  <h1>Frequently Asked Questions</h1>
+  <p>Answers to the most common questions about emergency plumbing in Durham Region</p>
+</div>
+<div class="page-content">
+  <div class="container content-wrap">
+    <h2>Costs &amp; Pricing</h2>
+    <h3>How much does an emergency plumber cost in Durham Region?</h3>
+    <p>Emergency plumbing rates typically range from $150–$350 for a standard call-out in Durham Region. The total cost depends on the time of day, complexity of the issue, and parts required. Our plumbers always provide a quote before starting any work, so there are no surprises.</p>
+
+    <h3>Is there a call-out fee?</h3>
+    <p>No. The plumbers in our network do not charge call-out fees. You'll receive a free quote and only pay if you choose to go ahead with the work.</p>
+
+    <h3>Do I pay upfront?</h3>
+    <p>You'll receive a clear quote before any work begins. Payment is typically collected upon completion. Most plumbers accept cash, e-transfer, and major credit cards.</p>
+
+    <h2>Emergencies</h2>
+    <h3>What counts as a plumbing emergency?</h3>
+    <p>A plumbing emergency includes any situation that requires immediate attention to prevent damage or health risks. Common examples include burst pipes, major water leaks, sewage backups, complete loss of water, no hot water in winter, and gas-related plumbing issues.</p>
+
+    <h3>What should I do while waiting for the plumber?</h3>
+    <p>If possible, turn off the water supply at the main shut-off valve (usually located near your water meter). Place towels or buckets to contain any leaks, and move valuables away from the affected area. If you smell gas, leave the home and call 911.</p>
+
+    <h3>How fast can a plumber arrive?</h3>
+    <p>For emergencies, our network plumbers typically arrive within 30–60 minutes anywhere in Durham Region. For non-urgent jobs, we'll schedule a convenient time that works for you.</p>
+
+    <h2>Service &amp; Coverage</h2>
+    <h3>Which areas do you cover?</h3>
+    <p>We serve all of Durham Region: Whitby, Oshawa, Ajax, Pickering, Brooklin, Courtice, Bowmanville, Clarington, Uxbridge, Scugog, and surrounding areas.</p>
+
+    <h3>Are your plumbers licensed and insured?</h3>
+    <p>Absolutely. Every plumber in our network holds a valid Ontario plumbing license and carries full liability insurance. We verify credentials regularly.</p>
+
+    <h3>Do you handle commercial plumbing?</h3>
+    <p>Our primary focus is residential emergency plumbing. However, many plumbers in our network also handle commercial jobs. Mention your needs in the form and we'll match you accordingly.</p>
+
+    <h3>Can I request the same plumber again?</h3>
+    <p>Yes! If you had a great experience, let us know when you fill out the form and we'll do our best to match you with the same professional.</p>
+
+    <div style="text-align:center;margin-top:40px">
+      <button class="btn btn-orange" onclick="showPage('home');setTimeout(scrollToForm,100)">Get Your Free Quote &rarr;</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PRIVACY POLICY PAGE -->
+<!-- ============================================================ -->
+<div class="page" id="page-privacy">
+<div class="page-header">
+  <h1>Privacy Policy</h1>
+  <p>Last updated: March 2026</p>
+</div>
+<div class="page-content">
+  <div class="container content-wrap">
+    <h2>Introduction</h2>
+    <p>Emergency Plumber Durham Region ("we," "us," "our") operates the website durhamemergencyplumber.ca. This Privacy Policy explains how we collect, use, and protect your personal information when you use our service.</p>
+
+    <h2>Information We Collect</h2>
+    <p>When you submit our lead form, we collect:</p>
+    <ul>
+      <li>Full name</li>
+      <li>Phone number</li>
+      <li>Postal code</li>
+      <li>Description of your plumbing issue</li>
+      <li>Urgency level</li>
+      <li>Preferred callback time</li>
+    </ul>
+    <p>We also automatically collect basic usage data (browser type, device type, pages visited) through standard web analytics.</p>
+
+    <h2>How We Use Your Information</h2>
+    <p>Your information is used solely to:</p>
+    <ul>
+      <li>Connect you with a licensed plumber in your area</li>
+      <li>Communicate with you regarding your service request</li>
+      <li>Improve our service and user experience</li>
+    </ul>
+    <p>We do not sell your personal information to third parties. Your details are shared only with the plumber matched to your request.</p>
+
+    <h2>Data Storage &amp; Security</h2>
+    <p>Your information is stored securely using industry-standard encryption. We use EmailJS for form notifications and Google Sheets for lead management — both services employ robust security measures. We retain your data only as long as necessary to fulfill the purpose for which it was collected.</p>
+
+    <h2>Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Request access to your personal data</li>
+      <li>Request correction or deletion of your data</li>
+      <li>Withdraw consent at any time</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at privacy@durhamemergencyplumber.ca.</p>
+
+    <h2>Cookies</h2>
+    <p>Our website may use minimal cookies to enhance your experience. No advertising or tracking cookies are used.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date.</p>
+
+    <h2>Contact</h2>
+    <p>For questions about this privacy policy, email us at privacy@durhamemergencyplumber.ca.</p>
+  </div>
+</div>
+</div>
+
+<!-- ============================================================ -->
+<!-- FOOTER (all pages) -->
+<!-- ============================================================ -->
+<footer class="footer">
+<div class="container">
+  <div class="footer-grid">
+    <div>
+      <h4>Emergency Plumber Durham Region</h4>
+      <p>Fast, Local, Trusted — Available Around The Clock</p>
+      <p>Serving Whitby, Oshawa, Ajax, Pickering, Brooklin &amp; all of Durham Region</p>
+      <p style="margin-top:12px"><a href="tel:+19055550199">905-555-0199</a></p>
+      <p><a href="mailto:info@durhamemergencyplumber.ca">info@durhamemergencyplumber.ca</a></p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <p><a href="#" onclick="showPage('home')">Home</a></p>
+      <p><a href="#" onclick="showPage('about')">About</a></p>
+      <p><a href="#" onclick="showPage('how-it-works')">How It Works</a></p>
+      <p><a href="#" onclick="showPage('faq-page')">FAQ</a></p>
+      <p><a href="#" onclick="showPage('privacy')">Privacy Policy</a></p>
+    </div>
+    <div>
+      <h4>Service Areas</h4>
+      <p>Whitby</p>
+      <p>Oshawa</p>
+      <p>Ajax</p>
+      <p>Pickering</p>
+      <p>Brooklin</p>
+      <p>Courtice &amp; Bowmanville</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Emergency Plumber Durham Region. All rights reserved.</p>
+  </div>
+</div>
+</footer>
+
+<script>
+/* ===== CONFIG ===== */
+// TODO: Replace these with your actual keys
+const EMAILJS_PUBLIC_KEY = 'YOUR_EMAILJS_PUBLIC_KEY';
+const EMAILJS_SERVICE_ID = 'YOUR_EMAILJS_SERVICE_ID';
+const EMAILJS_TEMPLATE_ID = 'YOUR_EMAILJS_TEMPLATE_ID';
+const GOOGLE_SHEETS_URL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL';
+
+/* ===== NAV ===== */
+function toggleNav(){document.getElementById('navLinks').classList.toggle('open')}
+function closeNav(){document.getElementById('navLinks').classList.remove('open')}
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>20)});
+
+/* ===== PAGE ROUTING ===== */
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  const page=document.getElementById('page-'+id);
+  if(page){page.classList.add('active');window.scrollTo(0,0)}
+}
+
+/* ===== FORM ===== */
+let currentStep=0;
+const formData={issue:'',urgency:'',postalCode:'',fullName:'',phone:'',callTime:''};
+
+function selectOption(el,field){
+  el.parentElement.querySelectorAll('.form-option').forEach(o=>o.classList.remove('selected'));
+  el.classList.add('selected');
+  formData[field]=el.textContent.trim();
+  hideError(currentStep);
+  setTimeout(()=>{
+    if(field==='callTime'){submitForm();return}
+    nextStep();
+  },250);
+}
+
+function nextStep(){
+  if(!validateStep())return;
+  currentStep++;
+  updateForm();
+}
+
+function prevStep(){
+  if(currentStep>0){currentStep--;updateForm()}
+}
+
+function updateForm(){
+  document.querySelectorAll('.form-step').forEach(s=>s.classList.remove('active'));
+  document.querySelector(`[data-step="${currentStep}"]`).classList.add('active');
+  document.querySelectorAll('.dot').forEach((d,i)=>{
+    d.classList.remove('active','done');
+    if(i===currentStep)d.classList.add('active');
+    else if(i<currentStep)d.classList.add('done');
+  });
+}
+
+function validateStep(){
+  switch(currentStep){
+    case 0:if(!formData.issue){showError(0);return false}break;
+    case 1:if(!formData.urgency){showError(1);return false}break;
+    case 2:
+      const pc=document.getElementById('postalCode').value.trim();
+      if(!pc||pc.length<5){showError(2);return false}
+      formData.postalCode=pc;break;
+    case 3:
+      const name=document.getElementById('fullName').value.trim();
+      const phone=document.getElementById('phone').value.trim();
+      if(!name||!phone||phone.length<7){showError(3);return false}
+      formData.fullName=name;formData.phone=phone;break;
+    case 4:if(!formData.callTime){showError(4);return false}break;
+  }
+  return true;
+}
+
+function showError(step){document.getElementById('err-'+step).style.display='block'}
+function hideError(step){const e=document.getElementById('err-'+step);if(e)e.style.display='none'}
+
+function scrollToForm(){
+  showPage('home');
+  setTimeout(()=>{
+    const f=document.getElementById('leadForm');
+    if(f)f.scrollIntoView({behavior:'smooth',block:'start'});
+  },50);
+}
+
+/* ===== SUBMIT ===== */
+function submitForm(){
+  if(!validateStep())return;
+  const btn=document.getElementById('submitBtn');
+  if(btn){btn.textContent='Submitting...';btn.disabled=true}
+
+  const timestamp=new Date().toLocaleString('en-CA',{timeZone:'America/Toronto'});
+
+  // Show thank you immediately for good UX
+  currentStep=5;
+  updateForm();
+
+  // EmailJS
+  if(EMAILJS_PUBLIC_KEY!=='YOUR_EMAILJS_PUBLIC_KEY'){
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+    emailjs.send(EMAILJS_SERVICE_ID,EMAILJS_TEMPLATE_ID,{
+      to_email:'jujulaville8@gmail.com',
+      subject:'New Plumbing Lead — Durham Region',
+      timestamp:timestamp,
+      issue:formData.issue,
+      urgency:formData.urgency,
+      postal_code:formData.postalCode,
+      full_name:formData.fullName,
+      phone:formData.phone,
+      call_time:formData.callTime,
+      message:`
+NEW PLUMBING LEAD — DURHAM REGION
+──────────────────────────────
+Timestamp: ${timestamp}
+Name: ${formData.fullName}
+Phone: ${formData.phone}
+Postal Code: ${formData.postalCode}
+Issue: ${formData.issue}
+Urgency: ${formData.urgency}
+Best Time to Call: ${formData.callTime}
+──────────────────────────────`
+    }).catch(e=>console.error('EmailJS error:',e));
+  }
+
+  // Google Sheets
+  if(GOOGLE_SHEETS_URL!=='YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL'){
+    fetch(GOOGLE_SHEETS_URL,{
+      method:'POST',
+      mode:'no-cors',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        timestamp:timestamp,
+        name:formData.fullName,
+        phone:formData.phone,
+        postalCode:formData.postalCode,
+        issue:formData.issue,
+        urgency:formData.urgency,
+        callTime:formData.callTime
+      })
+    }).catch(e=>console.error('Sheets error:',e));
+  }
+}
+
+/* ===== FAQ TOGGLE ===== */
+function toggleFaq(el){el.parentElement.classList.toggle('open')}
+
+/* ===== SCROLL ANIMATIONS ===== */
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:0.15});
+document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
